@@ -1,0 +1,10 @@
+.article {
+  width: 70%;
+  margin: 30px auto;
+  min-height: 300px;
+  border-bottom: 1px solid slategray;
+}
+
+.cover {
+  width: 100%;
+}

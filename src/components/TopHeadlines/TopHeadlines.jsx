@@ -10,9 +10,9 @@ function TopHeadlines() {
   //methods
   const fetchItems = () => {
     axios
-      .get(
-        "https://newsapi.org/v2/top-headlines?country=us&apiKey=f2a6ecdbdd0048f8bb6a2d988489bc67"
-      )
+      .get("https://newsapi.org/v2/top-headlines", {
+        params: { apiKey: "f2a6ecdbdd0048f8bb6a2d988489bc67", country: "us" },
+      })
       .then((res) => {
         console.log(res.data.articles);
         const data = res.data.articles;
