@@ -4,6 +4,8 @@
   align-items: center;
   height: 10vh;
   background-color: darkgray;
+  color: white;
+  text-decoration: none;
 }
 
 .items {
@@ -11,4 +13,11 @@
   justify-content: space-around;
   width: 100%;
   list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
+.items li {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }

@@ -11,12 +11,21 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-        <Route path="/topnews" component={TopHeadlines} />
-        <Route path="/allnews" component={Everything} />
-        <Route path="/authors" component={Authors} />
+        <Switch>
+          <Route path="/" exact component={TopHeadlines} />
+          <Route path="/topnews" component={TopHeadlines} />
+          <Route path="/allnews" component={Everything} />
+          <Route path="/authors" component={Authors} />
+        </Switch>
       </div>
     </Router>
   );
 }
+
+const Home = () => {
+  <div>
+    <h1>Home Page</h1>
+  </div>;
+};
 
 export default App;
