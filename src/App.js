@@ -5,6 +5,7 @@ import Nav from "./components/Nav/Nav";
 import TopHeadlines from "./components/TopHeadlines/TopHeadlines";
 import Authors from "./components/Authors/Authors";
 import Everything from "./components/Everything/Everything";
+import AuthorsDetail from "./components/Authors/AuthorsDetail";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/topnews" component={TopHeadlines} />
           <Route path="/allnews" component={Everything} />
-          <Route path="/authors" component={Authors} />
+          <Route path="/authors" exact component={Authors} />
+          <Route path="/authors/:id" component={AuthorsDetail} />
         </Switch>
       </div>
     </Router>

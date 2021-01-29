@@ -25,9 +25,9 @@ function TopHeadlines() {
   if (topHeadlines.length > 0) {
     article = (
       <div>
-        {topHeadlines.map((art) => {
+        {topHeadlines.map((art, i) => {
           return (
-            <div className={classes.article}>
+            <div key={i} className={classes.article}>
               <img className={classes.cover} src={art.urlToImage} alt="" />
               <h3>{art.title}</h3>
               <p>{art.description}</p>
