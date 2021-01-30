@@ -16,7 +16,7 @@ function Authors() {
       )
       .then((res) => {
         setAuthors(res.data.sources);
-        console.log(authors);
+        //console.log(authors);
       });
   };
 
@@ -44,7 +44,6 @@ function Authors() {
     <div>
       <h1>Authors</h1>
       {autore}
-      <AuthorsDetail data={authors} />
     </div>
   );
 }
